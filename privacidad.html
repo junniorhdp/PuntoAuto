@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad | Mecánica &amp; Frenos Punto Auto</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&family=Inter:wght@300..600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="nav-inner"><a class="wordmark" href="index.html">← Punto Auto</a></div></header>
+<main class="container legal" id="main">
+  <h1>Política de tratamiento de datos personales</h1>
+  <p><strong>Responsable:</strong> <span data-s="businessName"></span> (NIT <span data-s="nit"></span>), que opera bajo el nombre comercial Mecánica &amp; Frenos Punto Auto. Contacto: <span data-s="email"></span>.</p>
+
+  <h2>Datos que recolectamos</h2>
+  <p>Nombre, número de WhatsApp, placa o modelo del vehículo, servicio de interés, fecha preferida y el mensaje que escribas en el formulario.</p>
+
+  <h2>Finalidad</h2>
+  <ul>
+    <li>Responder tu solicitud de cotización y coordinar la cita.</li>
+    <li>Comunicarnos contigo por WhatsApp o llamada sobre el servicio solicitado.</li>
+  </ul>
+
+  <h2>Tus derechos (Ley 1581 de 2012)</h2>
+  <p>Puedes conocer, actualizar, rectificar y solicitar la supresión de tus datos, y revocar tu autorización, escribiendo al correo de contacto indicado arriba.</p>
+
+  <h2>Conservación</h2>
+  <p>Conservamos tus datos solo el tiempo necesario para atender tu solicitud y cumplir obligaciones legales.</p>
+
+  <p class="caption smoke">Texto base. Debe ser revisado y completado por el responsable del tratamiento antes de publicarse.</p>
+</main>
+<script src="config/site.js"></script>
+<script>
+  document.querySelectorAll('[data-s]').forEach(function (el) {
+    var k = el.dataset.s;
+    el.textContent = window.SITE.legal[k] || window.SITE[k] || '';
+  });
+</script>
+</body>
+</html>
